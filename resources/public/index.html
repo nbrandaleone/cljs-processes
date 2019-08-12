@@ -20,7 +20,7 @@
     <div id="app">
       August 2019
       <h2>10,000 processes</h2>
-      <p>10,000 independent go blocks all running at the same time. This code is based off of David Nolen's <a href="http://swannodette.github.io/2013/08/02/100000-processes">post</a> from his blog. The code is written in <a href="https://clojurescript.org/">Clojurescript</a>, which is variant of <a href="https://clojure.org/">Clojure/Lisp</a>. Clojurescript transpiles into Javascript<p>
+      <p>10,000 independent go blocks all running at the same time. This code is based off of David Nolen's <a href="http://swannodette.github.io/2013/08/02/100000-processes">post</a> from his blog. The <a href="https://github.com/nbrandaleone/cljs-processes">code</a> is written in <a href="https://clojurescript.org/">Clojurescript</a>, which is variant of <a href="https://clojure.org/">Clojure/Lisp</a>. Clojurescript transpiles into Javascript. There are some code snippets in David's original blog post.<p>
 		<p>I am going to have two follow-up posts, where I replicate this code in <a href="https://elm-lang.org/">ELM</a>, and in Elixir Phoenix <a href="https://dockyard.com/blog/2018/12/12/phoenix-liveview-interactive-real-time-apps-no-need-to-write-javascript">LiveView.</a></p>
 		<p>In a nutshell, there are 10,000 go routines (using core.async library) which are managing the 10,000 elements of the table. Once every 10s the routine will randomly change the number and color of the table element. The table is updates every 40 ms.</p>
 	<p>This is still very <strong>cool</strong> technology!</p>
