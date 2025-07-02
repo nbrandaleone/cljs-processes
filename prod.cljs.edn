@@ -1,0 +1,7 @@
+^{:auto-bundle	:webpack}
+{:main processes.core
+ :optimizations :advanced}
+
+;; We would usually use ':optimizations :simple' or
+;; ':optimizations :advanced'. However, this often munges foreign libraries,
+;; and it is simpler just to turn it off for stability.

@@ -1,4 +1,9 @@
-FROM nginx
+FROM nginx:stable-alpine
 
-RUN rm /usr/share/nginx/html/index.html
-COPY resources/public /usr/share/nginx/html/
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY site-content/ /usr/share/nginx/html
+
+EXPOSE 8080
+
+# The underlying NGINX image has an existing ENTRYPOINT/CMD
+# CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,10 @@
+^{:log-syntax-error-style :concise
+  :auto-bundle	:webpack
+  :watch-dirs   ["src"]
+  :css-dirs     ["resources/public"]}
+{:main processes.core}
+; :bundle-cmd
+; {:none ["npx" "webpack" "--mode=production"]
+;  :default ["npx" "webpack" "--mode=production"]}}
+
+;; Docs: https://github.com/bhauman/figwheel-main/blob/master/doc/figwheel-main-options.md
